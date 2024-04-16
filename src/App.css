@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+#calculator{
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  margin-top: 200px;
+  border-radius: 10px;
+}
+
+
+#btn-box{
+  background-color: #ECEDEE;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  display:block;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#display-panel{
+  width:auto;
+  height: 100px;
+  background-color: #688DB6;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+button{
+  height:85px;
+  width:85px;
+  border-radius:50%;
+  background-color: #ECEDEE;
+  border:none;
+  margin:5px;
+  color:#75879d;
+  filter:drop-shadow(4px 4px 5px);
+}
+
+.data-operation{
+  background-color: #426488;
+}
+r
+.signika-negative-calc{
+  font-family: "Signika Negative", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
