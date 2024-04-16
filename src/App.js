@@ -1,7 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { useEffect,useState } from 'react';
+import * as ReactDOM from 'react-dom';
+const result = null
 function App() {
+  // const [result, setResult] = useState(null)
+  const operate= (button)=>{
+    
+    const buttonClass = button.className
+
+    const stack = []
+    const result = this.result
+   if(buttonClass === 'data-number'){
+
+   }
+   if(buttonClass === 'data-number'){
+    stack.push(parseInt(button.innerText))
+   }
+  
+  
+  
+  
+  }
+  
   return (
     <div className="App">
       <div id='calculator'>
@@ -12,13 +33,13 @@ function App() {
           <div id="btn-box" className="signika-negative-calc">
             
 
-             <button className="data-operation" id="percent-operation">%</button>
+             <button className="data-operation" id="percent-operation" onClick={(e)=>operate(e.target)}>%</button>
              <button className="data-operation" id="clear-operation">c</button>
              <button className="data-operation" id="arrow-operation">→</button>
              <button className="data-operation" id="divison-operation">÷</button>
              
 
-            <button className="data-number">7</button>
+            <button className="data-number" onClick={(e)=>operate(e.target)}>7</button>
             <button className="data-number">8</button>
             <button className="data-number">9</button>
              
