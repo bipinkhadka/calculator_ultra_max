@@ -4,18 +4,26 @@ import { useEffect,useState } from 'react';
 import * as ReactDOM from 'react-dom';
 const result = null
 function App() {
-  // const [result, setResult] = useState(null)
+  const [result, setResult] = useState(null)
+  const [resultStack, setResultStack] = useState([0])
+
+  // our main operate function
+  // 
   const operate= (button)=>{
     
     const buttonClass = button.className
 
     const stack = []
-    const result = this.result
-   if(buttonClass === 'data-number'){
+    //const result = this.result
+    
+    if(buttonClass === 'data-number'){
+        const digit = parseInt(button.innerText)
+        stack.push(digit)
 
-   }
-   if(buttonClass === 'data-number'){
-    stack.push(parseInt(button.innerText))
+    }
+
+   if(buttonClass === 'data-operation'){
+    stack.push(button.innerText)
    }
   
   
